@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/activity_signup"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:paddingBottom="16dp"
+                                             android:paddingLeft="16dp"
+                                             android:paddingRight="16dp"
+                                             android:paddingTop="16dp"
+                                             tools:context="com.iiht.student.nearme.LoginActivity"
+                                             android:background="@drawable/splash">
+
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="160dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_height="338dp">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText_un"
+                android:hint="Enter Username"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/background_light"
+                android:background="@drawable/inputfields" />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText_pw"
+                android:hint="Enter Password"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/background_light"
+                android:background="@drawable/inputfields"
+                android:layout_marginTop="10dp" />
+
+        <Button
+                android:text="Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_login"
+                android:layout_gravity="center"
+                android:textColor="@android:color/background_light"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:text="New User ?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/background_light"
+                android:layout_marginTop="50dp"/>
+
+        <Button
+                android:text="Signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_sn"
+                android:layout_gravity="center"
+                android:textColor="@android:color/background_light"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

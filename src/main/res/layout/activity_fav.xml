@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.iiht.student.nearme.FavActivity"
+              android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/no_bg"
+            android:id="@+id/image_favplace"
+            android:layout_marginTop="20dp" android:scaleType="centerCrop"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_favname"
+            android:textSize="18sp"
+            android:text="Name"
+            android:layout_marginLeft="10dp" android:layout_marginTop="20dp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_favadd"
+            android:textSize="16sp"
+            android:text="Vicinity"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:map="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/map3"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="match_parent"
+
+              tools:context="com.iiht.student.nearme.FavActivity"
+              android:layout_marginTop="30dp"
+              android:layout_height="250dp"/>
+</LinearLayout>

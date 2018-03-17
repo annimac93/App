@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.iiht.student.nearme">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/bnicon"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".FirstActivity"
+                >
+        </activity>
+        <activity
+                android:name=".LoginActivity"
+                >
+        </activity>
+        <activity
+                android:name=".SignupActivity"
+                >
+        </activity>
+        <activity
+                android:name=".MenuActivity"
+                android:label="@string/title_activity_menu"
+                android:noHistory="true"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".MapActivity"  >
+        </activity>
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/google_maps_key"/>
+
+        <activity
+                android:name=".ProfileActivity"
+                android:noHistory="true">
+        </activity>
+        <activity
+                android:name=".HomeActivity"
+                android:noHistory="true">
+        </activity>
+        <activity android:name=".PlaceActivity" android:noHistory="true">
+        </activity>
+        <activity android:name=".FavActivity" android:noHistory="true">
+        </activity>
+    </application>
+
+</manifest>
