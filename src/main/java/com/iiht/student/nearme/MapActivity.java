@@ -100,7 +100,7 @@ public class MapActivity extends MenuActivity implements OnMapReadyCallback, Goo
         mapFragment.getMapAsync(this);
         Intent i = getIntent();
         userid = i.getStringExtra("userid");
-
+        //test comment
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             checkLocationPermission();
         }
